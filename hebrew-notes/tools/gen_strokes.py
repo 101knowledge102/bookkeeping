@@ -2,7 +2,7 @@ import re
 # y: 上外线 8, 上点线 28, 上基线 44, 下基线 104, 下点线 120, 下外线 140
 LINES=[(8,"上外线","o"),(28,"上点线","d"),(44,"上基线","b"),(104,"下基线","b"),(120,"下点线","d"),(140,"下外线","o")]
 G={ # ch: (width, [strokes], extras)
-'א':(64,["M52,44 Q54,62 40,72","M10,44 L56,104","M26,70 Q14,82 10,104"]),
+'א':(64,["M52,44 Q52,62 35,74","M12,44 L56,104","M24,60 Q12,78 12,104"]),
 'ב':(62,["M8,44 H42 Q50,44 50,52 V104","M58,104 H6"]),
 'ג':(44,["M10,44 H22 Q32,44 32,56 V104","M32,80 L10,104"]),
 'ד':(58,["M4,44 H52","M44,44 V104"]),
@@ -179,5 +179,5 @@ th{{white-space:nowrap}} thead th{{border-top:0;color:var(--muted);font-size:13p
 </section>
 </div>
 '''
-open('/home/user/bookkeeping/hebrew-notes/alphabet-strokes.html','w').write(html)
+open(__import__('os').path.join(__import__('os').path.dirname(__file__),'..','alphabet-strokes.html'),'w').write(html)
 print(len(html))
