@@ -1,0 +1,131 @@
+<title>希伯来字母对照表</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gveret+Levin&family=Noto+Serif+Hebrew:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#f3f5f9; --card:#ffffff; --ink:#1a2030; --muted:#5b647a; --line:#dde2ec;
+  --accent:#2a4aa8; --pen:#a8372b; --rule:#c9d6ee; --chip:#eaeef7;
+  --heb-print:"Noto Serif Hebrew","SBL Hebrew","Ezra SIL","Times New Roman",serif;
+  --heb-hand:"Gveret Levin","Noto Serif Hebrew",serif;
+  --ui:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC","Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#10131a; --card:#191e29; --ink:#e7eaf2; --muted:#9aa3b8; --line:#2a3142;
+    --accent:#93aaff; --pen:#ff8f80; --rule:#2c3a5a; --chip:#232a3a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#10131a; --card:#191e29; --ink:#e7eaf2; --muted:#9aa3b8; --line:#2a3142;
+  --accent:#93aaff; --pen:#ff8f80; --rule:#2c3a5a; --chip:#232a3a;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:15px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:16px;padding-block:32px 48px}
+header{display:grid;gap:6px;margin-bottom:24px}
+h1{font-size:28px;line-height:1.25;margin:0;text-wrap:balance}
+h1 .heb{font-family:var(--heb-print);color:var(--accent);margin-inline-start:10px;font-weight:700}
+.lede{color:var(--muted);margin:0;max-width:62ch}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--muted);margin:14px 0 22px}
+.legend b{color:var(--ink);font-weight:600}
+.legend .p{color:var(--accent)} .legend .h{color:var(--pen)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px 14px;display:grid;gap:10px}
+.top{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.top .n{font-weight:700;color:var(--ink)}
+.glyphs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.g{display:grid;justify-items:center;gap:2px}
+.g .lab{font-size:11px;letter-spacing:.06em;color:var(--muted)}
+.print{height:72px;display:flex;align-items:center;font-family:var(--heb-print);font-size:54px;line-height:1;color:var(--accent);font-weight:500}
+.hand{height:72px;display:flex;align-items:center;justify-content:center;font-family:var(--heb-hand);font-size:54px;line-height:1;color:var(--pen);
+  width:100%;text-align:center;border-radius:6px;
+  background:repeating-linear-gradient(to bottom,transparent 0 30px,var(--rule) 30px 31px)}
+.name{display:flex;justify-content:space-between;align-items:baseline;gap:8px;border-top:1px solid var(--line);padding-top:8px}
+.name .en{font-weight:700}
+.name .zh{color:var(--muted);font-size:13px}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:13.5px}
+dt{color:var(--muted)} dd{margin:0}
+.tr{font-style:italic}
+.chip{display:inline-block;min-width:1.7em;text-align:center;padding:0 6px;border-radius:5px;background:var(--chip);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;font-weight:700}
+.fin{font-size:13px;background:var(--chip);border-radius:7px;padding:6px 8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.fin .fp{font-family:var(--heb-print);font-size:26px;color:var(--accent);line-height:1}
+.fin .fh{font-family:var(--heb-hand);font-size:26px;color:var(--pen);line-height:1}
+.fin .t{color:var(--muted)}
+
+section.notes{margin-top:32px;display:grid;gap:10px;max-width:70ch}
+section.notes h2{font-size:18px;margin:0}
+section.notes ul{margin:0;padding-inline-start:20px;display:grid;gap:6px}
+.inl{font-family:var(--heb-print);font-size:1.25em;color:var(--accent)}
+@media print{.card{break-inside:avoid}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>希伯来字母对照表<span class="heb" lang="he">אָלֶף־בֵּית</span></h1>
+    <p class="lede">22 个字母，按字母顺序排列。每个字母列出印刷体、手写体、名称、发音、学术转写、数值，以及以色列标准键盘（手机、Windows 自带）上对应的按键。</p>
+  </header>
+  <div class="legend">
+    <span><b class="p">蓝色</b>＝印刷体（圣经、课本里的字形）</span>
+    <span><b class="h">红色</b>＝手写体（以色列人日常手写）</span>
+    <span><b>按键</b>＝以色列标准键盘上的英文键</span>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <section class="notes">
+    <h2>补充说明</h2>
+    <ul>
+      <li><b>词尾形式</b>：כ מ נ פ צ 出现在词尾时要改写成 <span class="inl">ך ם ן ף ץ</span>，发音不变，键盘上是单独的键。</li>
+      <li><b>有点 / 无点</b>：<span class="inl">בּ כּ פּ</span> 中间有点（强点 dagesh）时读 b、k、p；<span class="inl">ב כ פ</span> 没点时读 v、kh、f。</li>
+      <li><b>Shin / Sin</b>：右上方有点 <span class="inl">שׁ</span> 读 sh，左上方有点 <span class="inl">שׂ</span> 读 s。</li>
+      <li><b>א 和 ע</b>：本身基本不发音，读音由下面的元音决定。</li>
+      <li><b>数值</b>：希伯来字母也用来表示数字，例如 <span class="inl">יח</span>＝10＋8＝18。词尾形式表示 500–900 是后期的用法。</li>
+      <li><b>手写体</b>：以色列人日常手写用这种草体，但圣经和印刷品都用印刷体。读经文只要认得印刷体就够了。</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+const L=[
+ ["א","Aleph","阿列夫","不发音（声门塞音），读音看元音","ʾ",1,"T"],
+ ["ב","Bet","贝特","有点 b ／ 无点 v","b / v",2,"C"],
+ ["ג","Gimel","基梅尔","g","g",3,"D"],
+ ["ד","Dalet","达列特","d","d",4,"S"],
+ ["ה","He","黑","h（在词尾通常不发音）","h",5,"V"],
+ ["ו","Vav","瓦夫","v（圣经时代读 w）","w",6,"U"],
+ ["ז","Zayin","扎因","z","z",7,"Z"],
+ ["ח","Chet","赫特","喉音 ch（像德语 Bach）","ḥ",8,"J"],
+ ["ט","Tet","泰特","t","ṭ",9,"Y"],
+ ["י","Yod","约德","y","y",10,"H"],
+ ["כ","Kaf","卡夫","有点 k ／ 无点 kh","k / kh",20,"F",["ך","L",500]],
+ ["ל","Lamed","拉梅德","l","l",30,"K"],
+ ["מ","Mem","梅姆","m","m",40,"N",["ם","O",600]],
+ ["נ","Nun","努恩","n","n",50,"B",["ן","I",700]],
+ ["ס","Samekh","萨梅赫","s","s",60,"X"],
+ ["ע","Ayin","阿因","不发音（喉音），读音看元音","ʿ",70,"G"],
+ ["פ","Pe","佩","有点 p ／ 无点 f","p / f",80,"P",["ף",";",800]],
+ ["צ","Tsade","撒迪","ts","ṣ",90,"M",["ץ",".",900]],
+ ["ק","Qof","科夫","k（学术上写 q）","q",100,"E"],
+ ["ר","Resh","雷什","r","r",200,"R"],
+ ["ש","Shin / Sin","欣 / 辛","שׁ sh ／ שׂ s","š / ś",300,"A"],
+ ["ת","Tav","塔夫","t","t",400,","]
+];
+const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+document.getElementById("grid").innerHTML=L.map((r,i)=>{
+ const [ch,en,zh,snd,tr,val,key,fin]=r;
+ const f=fin?`<div class="fin"><span class="t">词尾</span><span class="fp" lang="he">${fin[0]}</span><span class="fh" lang="he">${fin[0]}</span><span class="t">按键 <span class="chip">${esc(fin[1])}</span> · ${fin[2]}</span></div>`:"";
+ return `<article class="card">
+  <div class="top"><span class="n">第 ${i+1} 个</span><span>数值 ${val}</span></div>
+  <div class="glyphs">
+   <div class="g"><span class="print" lang="he">${ch}</span><span class="lab">印刷体</span></div>
+   <div class="g"><span class="hand" lang="he">${ch}</span><span class="lab">手写体</span></div>
+  </div>
+  <div class="name"><span class="en">${en}</span><span class="zh">${zh}</span></div>
+  <dl><dt>发音</dt><dd>${snd}</dd><dt>转写</dt><dd class="tr">${tr}</dd><dt>按键</dt><dd><span class="chip">${esc(key)}</span></dd></dl>
+  ${f}
+ </article>`;
+}).join("");
+</script>
