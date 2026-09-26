@@ -46,6 +46,8 @@ P={
 'ש':'<path d="M4,11 Q5,30 13,29 Q20,28 20,15 Q20,28 27,29 Q35,30 36,11"/>',
 'ת':'<path d="M20,4 V36 M5,18 H35"/>',
 }
+import json
+P={k:f'<path d="{v}" class="pgf"/>' for k,v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'paleo_paths.json'))).items()}
 def put_letters(x0,mirror,mapping,paleo):
     out=''
     for k,ch in mapping.items():
@@ -55,7 +57,7 @@ def put_letters(x0,mirror,mapping,paleo):
         big=k=='palm'
         if paleo:
             if ch in FINALS: continue
-            sc=1.25 if big else 0.8
+            sc=1.4 if big else 0.95
             out+=f'<g class="pg" transform="translate({X},{y}) scale({sc}) translate(-20,-20)">{P[ch]}</g>'
         else:
             cls='fin' if ch in FINALS else 'lt'
@@ -94,7 +96,7 @@ p{{margin:0;color:var(--muted);max-width:64ch}}
 .lt{{fill:var(--ink);font-family:var(--heb);text-anchor:middle;font-weight:500}}
 .fin{{fill:var(--fin);font-family:var(--heb);text-anchor:middle;font-weight:500}}
 .pg{{fill:none;stroke:var(--ink);stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}}
-.pg .fill{{fill:var(--ink);stroke:none}}
+.pgf{{fill:var(--ink);stroke:none;fill-rule:evenodd}}
 .verse{{font-size:17px;font-weight:600;line-height:1.8}}
 .verse .he{{font-family:var(--hebs);color:var(--hl);font-size:1.15em}}
 .notes{{display:grid;gap:8px}}
