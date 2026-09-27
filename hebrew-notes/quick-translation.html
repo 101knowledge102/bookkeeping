@@ -1,0 +1,306 @@
+<title>希伯来语快翻课件</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@500;700&display=swap">
+<style>
+:root{--bg:#f3f5f9;--card:#ffffff;--ink:#1a2030;--muted:#5b647a;--line:#dde2ec;--chip:#eaeef7;--accent:#2a4aa8;--hl:#c0392b;--tip:#fff4d6;--tipink:#5a4410;
+--s1:#dfe5f3;--s2:#d8efec;--s3:#fbecd0;--s4:#fbdcc8;--s5:#f8dde6;--s6:#e3e2f6;--s7:#d9e6ee;
+--ui:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC","Segoe UI",sans-serif;--heb:"Noto Serif Hebrew","SBL Hebrew","Times New Roman",serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#10131a;--card:#191e29;--ink:#e7eaf2;--muted:#9aa3b8;--line:#2a3142;--chip:#232a3a;--accent:#93aaff;--hl:#ff8f80;--tip:#3a3220;--tipink:#f3dfae;
+--s1:#232a3d;--s2:#1d3331;--s3:#3a3020;--s4:#3d2a20;--s5:#3a2230;--s6:#2a2840;--s7:#1f2d36}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#10131a;--card:#191e29;--ink:#e7eaf2;--muted:#9aa3b8;--line:#2a3142;--chip:#232a3a;--accent:#93aaff;--hl:#ff8f80;--tip:#3a3220;--tipink:#f3dfae;
+--s1:#232a3d;--s2:#1d3331;--s3:#3a3020;--s4:#3d2a20;--s5:#3a2230;--s6:#2a2840;--s7:#1f2d36}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);line-height:1.7;font-size:15.5px}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:28px 56px;display:grid;gap:30px}
+header{display:grid;gap:6px}
+h1{margin:0;font-size:28px;text-wrap:balance}
+h2{margin:0;font-size:21px;text-wrap:balance}
+h3{margin:0;font-size:16.5px}
+p{margin:0;max-width:68ch}
+.lede{color:var(--muted)}
+section{display:grid;gap:14px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:10px}
+.he{font-family:var(--heb);font-size:1.25em;color:var(--accent)}
+.hl{color:var(--hl);font-weight:700}
+.muted{color:var(--muted)}
+ol,ul{margin:0;padding-inline-start:22px;display:grid;gap:6px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{text-align:left;padding:8px 10px;border-top:1px solid var(--line);vertical-align:top}
+thead th{border-top:0;color:var(--muted);font-size:13px;font-weight:600}
+tbody th{white-space:nowrap}
+.tip{background:var(--tip);color:var(--tipink);border-radius:8px;padding:10px 14px}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.three .panel h3{display:flex;gap:8px;align-items:baseline}
+.tag{font-size:12px;background:var(--chip);border-radius:5px;padding:1px 8px;color:var(--muted);font-weight:600}
+.steps{display:grid;gap:10px;counter-reset:s}
+.step{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;border-radius:12px;padding:14px 16px;align-items:start}
+.step .n{grid-row:span 3;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-weight:800;font-size:18px}
+.step h3{font-size:18px}
+.step .key{font-weight:600}
+.step .how{color:var(--ink);opacity:.9}
+.st1{background:var(--s1)}.st2{background:var(--s2)}.st3{background:var(--s3)}.st4{background:var(--s4)}.st5{background:var(--s5)}.st6{background:var(--s6)}.st7{background:var(--s7)}
+.warn{font-weight:700;color:var(--hl)}
+.persons{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:6px}
+.persons div{background:var(--chip);border-radius:6px;padding:6px 10px;display:flex;justify-content:space-between;gap:8px}
+.persons b{font-weight:700}
+.persons span{color:var(--muted);font-size:13.5px;font-variant-numeric:tabular-nums}
+.slogan{font-size:17px;font-weight:700;text-align:center;padding:12px;border-radius:10px;background:var(--tip);color:var(--tipink)}
+.walk td:first-child{white-space:nowrap;font-weight:600}
+.big{font-family:var(--heb);font-size:34px;color:var(--accent);text-align:center;direction:rtl}
+.result{font-size:18px;font-weight:700}
+.ex{background:var(--card);border:1px dashed var(--accent);border-radius:10px;padding:16px;display:grid;gap:10px}
+.ex .lab{display:inline-block;background:var(--accent);color:var(--card);font-size:12.5px;font-weight:700;border-radius:5px;padding:1px 9px;margin-right:8px}
+.ex h3{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.formula{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.formula div{background:var(--chip);border-radius:8px;padding:8px 12px;text-align:center;display:grid;gap:2px;min-width:64px}
+.formula b{font-size:22px;color:var(--hl)}
+.formula span{font-size:12.5px;color:var(--muted)}
+.kw{font-weight:800;color:var(--hl)}
+.why{color:var(--muted);font-size:14px}
+</style>
+
+<div class="wrap">
+<header>
+<h1>希伯来语快翻课件</h1>
+<p class="lede">极速希语课程“快速翻译”部分的完整整理，依据课件、App 截图和两份课堂手写笔记，用自己的话重新表达。每个课件主题下面先讲规则，再单独列出例子。</p>
+</header>
+
+<section>
+<h2>引言：为什么要学希伯来文原文</h2>
+<div class="panel">
+<p>希伯来文是一种非常精炼的语言。一个词往往就能装下中文要用好几个词才说得完的信息：</p>
+<ul>
+<li><span class="he">וַיֹּאמֶר</span>：一个词＝“和＋他＋说”，连接词、人称、时态都在里面。</li>
+<li><span class="he">וּמֵהָאֹכֵל</span>：一个词＝“和＋从＋那＋吃者”，连接词、介系词、定冠词都加在词前面。</li>
+<li><span class="he">סוּסוֹ</span>：一个词＝“他的马”，物主代词直接加在词尾。</li>
+</ul>
+</div>
+<div class="panel scroll"><table>
+<thead><tr><th>语言</th><th>创世记 1:1</th><th>长度</th></tr></thead><tbody>
+<tr><th>希伯来文</th><td><span class="he">בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ</span></td><td>7 个词</td></tr>
+<tr><th>中文</th><td>起初，神创造天地。</td><td>7 个字</td></tr>
+<tr><th>英文</th><td>In the beginning God created the heavens and the earth.</td><td>10 个词</td></tr>
+</tbody></table></div>
+<div class="panel">
+<p>整本希伯来文旧约大约 30 万个词，英文译本通常要 60 万个词左右。中文同样精炼，但方法不同：<b>希伯来文把信息压进一个词的变化里，中文靠字数少、不需要词形变化。</b></p>
+<p>精炼也有代价。中文的“说”永远是“说”，希伯来文的“说”却有几十种形式。每读一个词，都要把压在里面的人称、时态、词干、前缀和词尾一层层解开。这正是<b>快翻七步</b>要做的事。所以学得慢、觉得难，是很正常的。</p>
+</div>
+<div class="panel">
+<p>在犹太传统里，希伯来文称为 <span class="he">לְשׁוֹן הַקֹּדֶשׁ</span>（lashon ha-kodesh，圣言），因为旧约的大部分是用它写成的。同时，神的话语也通过别的语言传下来：但以理书和以斯拉记有几段是亚兰文，新约是希腊文。</p>
+<p>学希伯来文原文，不是为了比较哪一种语言最好，而是为了更贴近经文本来的样子：读出每一个词里原有的信息，不增加，也不遗漏。</p>
+</div>
+</section>
+
+<section>
+<h2>一、快翻、直译、意译</h2>
+<p>三者是翻译的三道工序，一步接一步，不能跳过。</p>
+<div class="three">
+<div class="panel"><h3>快翻<span class="tag">第一步</span></h3><p>一个词对一个词，按原文的顺序和结构把字面意思翻出来。读起来可能不通顺，但原文的每个信息都在。</p></div>
+<div class="panel"><h3>直译<span class="tag">第二步</span></h3><p>在快翻的基础上，按中文语法调整词序，让句子读得通，但仍然紧贴原文。</p></div>
+<div class="panel"><h3>意译<span class="tag">第三步</span></h3><p>在直译的基础上，用自然流畅的中文把意思表达出来，这才是最后的译文。</p></div>
+</div>
+</section>
+
+<section>
+<h2>二、为什么要学快翻</h2>
+<div class="panel"><ol>
+<li>直接读懂原文本来的意思，而不是只读别人翻好的译文。</li>
+<li>看出不同译本之间为什么不一样，知道它们各自是怎么处理原文的。</li>
+<li>能自己研读原文，不必完全依赖现成的译本。</li>
+</ol></div>
+</section>
+
+<section>
+<h2>三、快翻的七个原则</h2>
+<div class="panel scroll"><table>
+<thead><tr><th>#</th><th>原则</th><th>怎么做</th><th>为什么</th></tr></thead><tbody>
+<tr><th>1</th><td><b>写型优先</b></td><td>经文同时有“读型”（Qere）和“写型”（Ketiv）时，按写型翻。</td><td class="why">写型是最古老、最原始的版本。</td></tr>
+<tr><th>2</th><td><b>保留原文句式</b></td><td>尽量不改动原文的句子结构和词序。</td><td class="why">句子结构反映原文的文化和思维方式。</td></tr>
+<tr><th>3</th><td><b>简义取 Qal 本义</b></td><td>词义一律取 Qal 词干的基本意思。</td><td class="why">不过度处理；有了统一的基本义，换到其他词干时才能准确还原。</td></tr>
+<tr><th>4</th><td><b>音译转语义</b></td><td>凡是音译的名字，都按它的意思翻出来。</td><td class="why">音译只保留了读音，表达不出原文的含义。</td></tr>
+<tr><th>5</th><td><b>由浅入深</b></td><td>先掌握常见、简单的，再处理疑难的。</td><td class="why">循序渐进是最有效的学习方式。</td></tr>
+<tr><th>6</th><td><b>经文符号不译</b></td><td>连接线 <span class="he">־</span> 和段落、节末符号 <span class="he">פ ס ׃</span> 不用翻。</td><td class="why">这些符号本身没有意思。</td></tr>
+<tr><th>7</th><td><b>格式统一</b></td><td>作业格式和课件示范保持一致。</td><td class="why">保持规范，避免混乱。</td></tr>
+</tbody></table></div>
+
+<div class="ex">
+<h3><span class="lab">例子</span>创世记 6:9　<span class="he">אֵלֶּה תּוֹלְדֹת נֹחַ</span></h3>
+<p class="muted">示范原则 2（保留原文句式）和原则 4（音译转语义）。</p>
+<div class="scroll"><table>
+<thead><tr><th>原文</th><th>App 分析</th><th>快翻</th></tr></thead><tbody>
+<tr><td><span class="he">אֵלֶּה</span></td><td>指示代词</td><td>这些</td></tr>
+<tr><td><span class="he">תּוֹלְדֹת</span></td><td>名词，复阴附属形；简义：子孙、后代、家谱</td><td>的众后代</td></tr>
+<tr><td><span class="he">נֹחַ</span></td><td>专有名词，人名“挪亚”</td><td>休息</td></tr>
+</tbody></table></div>
+<ul>
+<li><b>复数</b>译成“<span class="kw">众</span>”；<b>附属形</b>表示“……的”，所以 <span class="he">תּוֹלְדֹת</span> 译“<span class="kw">的</span>众后代”。“的”放在前面，是为了保留原文词序。</li>
+<li><span class="he">נֹחַ</span> 是人名，按原则 4 不写音译“挪亚”，而是按它的意思译“<span class="kw">休息</span>”。</li>
+</ul>
+<p class="result">快翻：这些 的众后代 休息　→　和合本：这些是挪亚的后代</p>
+</div>
+</section>
+
+<section>
+<h2>四、动词的七步快翻顺序</h2>
+<p>遇到一个动词，按下面七步逐项检查，每一步找出一个信息，最后把这些信息拼成快翻。<span class="warn">顺序不能乱。</span></p>
+
+<div class="steps">
+<div class="step st1"><div class="n">1</div><h3>连接词</h3>
+<p class="key">先看动词前面有没有连接词 <span class="he">ו</span>（写作 <span class="he">וְ</span>、<span class="he">וּ</span>、<span class="he">וַ</span>），本义是“和”。</p>
+<p class="how">带 <span class="he">ו</span> 的动词常构成<b>连续式</b>或<b>叙述式</b>，表示事情一件接一件地发生，是圣经叙事往下推进的主要方式。</p></div>
+<div class="step st2"><div class="n">2</div><h3>人称</h3>
+<p class="key">确定动作是谁做的：第几人称、单数还是复数、阳性还是阴性。</p>
+<p class="how">希伯来语动词本身就带人称，第二、第三人称还分阴阳。人称和第 7 步的人称词尾是连在一起的，见下面的人称表。</p></div>
+<div class="step st3"><div class="n">3</div><h3>否定副词</h3>
+<p class="key">看动词前面有没有 <span class="he">לֹא</span> 或 <span class="he">אַל</span>。</p>
+<p class="how"><span class="he">לֹא</span> 是陈述一个事实，译“不、没有”；<span class="he">אַל</span> 是下命令或禁止，译“不要、不可”。</p></div>
+<div class="step st4"><div class="n">4</div><h3>时态</h3>
+<p class="key">判断动词是哪一种形态：完成、分词、未完成、不定、命令。</p>
+<p class="how">完成加“<span class="kw">已经</span>”；分词表示持续的动作或状态，译“正在……”“……着”“……的”“……者”；命令就是叫人去做。</p></div>
+<div class="step st5"><div class="n">5</div><h3>词干</h3>
+<p class="key">判断动词属于七个词干中的哪一个，再加上这个词干的<b>快翻用字</b>（被、大大、使……）。</p>
+<p class="how">词干决定这个动作是自己做、被人做、使别人做，还是加强语气。见下面的词干表。</p></div>
+<div class="step st6"><div class="n">6</div><h3>简义</h3>
+<p class="key">词义以主动词干（Qal，现代希伯来语叫 Pa'al）的基本意思为准。</p>
+<p class="how">先找到字根，取它在 Qal 里的基本意思，再配上第 5 步的快翻用字。这就是原则 3。</p></div>
+<div class="step st7"><div class="n">7</div><h3>人称词尾</h3>
+<p class="key">最后看动词后面的词尾：1、2、3 人称，单复数，阴阳性。</p>
+<p class="how">很多人称信息就在词尾上。用它回头核对第 2 步找到的人称，两者应该一致。</p></div>
+</div>
+</section>
+
+<section>
+<h3>人称表（第 2、7 步用）</h3>
+<div class="persons">
+<div><b>我</b><span>1 单</span></div><div><b>你</b><span>2 单阳</span></div><div><b>妳</b><span>2 单阴</span></div><div><b>他</b><span>3 单阳</span></div><div><b>她</b><span>3 单阴</span></div>
+<div><b>我们</b><span>1 复</span></div><div><b>你们</b><span>2 复阳</span></div><div><b>妳们</b><span>2 复阴</span></div><div><b>他们</b><span>3 复阳</span></div><div><b>她们</b><span>3 复阴</span></div>
+</div>
+<p class="muted">第一人称不分阴阳，第二、第三人称要分。</p>
+</section>
+
+<section>
+<h3>否定副词对比：<span class="he">לֹא</span> 和 <span class="he">אַל</span>（第 3 步用）</h3>
+<div class="panel scroll"><table>
+<thead><tr><th></th><th><span class="he">לֹא</span></th><th><span class="he">אַל</span></th></tr></thead><tbody>
+<tr><th>核心意思</th><td>不、没有</td><td>不要、不可</td></tr>
+<tr><th>语气</th><td>陈述，描述一个事实</td><td>祈使、禁止，下命令</td></tr>
+<tr><th>时间</th><td>过去、现在、将来都可以</td><td>指向将来，叫人以后别做</td></tr>
+<tr><th>搭配的动词</th><td>一般的完成式、未完成式（qatal / yiqtol）</td><td>表示意愿或命令的未完成式（jussive / cohortative）</td></tr>
+<tr><th>像中文的</th><td>“他没去”“我不吃”</td><td>“别去”“不要吃”</td></tr>
+</tbody></table></div>
+<div class="slogan"><span class="he">לֹא</span> 说事实，告诉你“没发生”；<span class="he">אַל</span> 下命令，叫你“别让它发生”。</div>
+<div class="tip">注意：别把 <span class="he">אַל</span>（不要）和介系词 <span class="he">עַל</span>（在……上）搞混，两个词只差第一个字母。</div>
+<div class="tip">补充：<span class="he">לֹא</span> 加未完成式也可以表示长久有效的禁令，例如十诫的 <span class="he">לֹא תִגְנֹב</span>“不可偷盗”（出 20:15）。</div>
+</section>
+
+<section>
+<h3>七种词干（第 5 步用）</h3>
+<div class="panel scroll"><table>
+<thead><tr><th>#</th><th>名称</th><th>希伯来语名称</th><th>意思</th><th>快翻用字</th></tr></thead><tbody>
+<tr><th>1</th><td><b>Qal</b> / Pa'al</td><td><span class="he">פָּעַל</span></td><td>最基础的行为（主动）</td><td>做</td></tr>
+<tr><th>2</th><td><b>Nif'al</b> / Nip'al</td><td><span class="he">נִפְעַל</span></td><td>被动、反身</td><td><span class="kw">被</span>做</td></tr>
+<tr><th>3</th><td><b>Pi'el</b></td><td><span class="he">פִּעֵל</span></td><td>加强、重复、及物主动</td><td><span class="kw">大大</span>做</td></tr>
+<tr><th>4</th><td><b>Pu'al</b></td><td><span class="he">פֻּעַל</span></td><td>Pi'el 的被动</td><td><span class="kw">被大大</span>做</td></tr>
+<tr><th>5</th><td><b>Hif'il</b> / Hip'il</td><td><span class="he">הִפְעִיל</span></td><td>使役、致使</td><td><span class="kw">使</span>做</td></tr>
+<tr><th>6</th><td><b>Hof'al</b> / Hop'al</td><td><span class="he">הָפְעַל</span></td><td>Hif'il 的被动</td><td><span class="kw">被使</span>做</td></tr>
+<tr><th>7</th><td><b>Hitpa'el</b></td><td><span class="he">הִתְפַּעֵל</span></td><td>加强反身、相互</td><td>自己<span class="kw">大大</span>做、互相做</td></tr>
+</tbody></table></div>
+<p class="muted">七个名称都是用三字母字根 <span class="he">פ־ע־ל</span>（做、行）在各词干的完成式来命名，代表这个词干的典型形态。</p>
+<div class="tip"><b>小注：两种写法、两种读法</b><br>
+名称一栏的两种写法都保留：<b>Nip'al、Hip'il、Hop'al</b> 是<b>古法读音</b>，也是极速希语的读法：一个字母只有一个发音，<span class="he">פ</span> 一律读 p。<b>Nif'al、Hif'il、Hof'al</b> 是<b>马所拉／现代读法</b>：<span class="he">פ</span> 中间有点读 p，没点读 f。一般认为，一个字母分两种读音是圣经时代后期才出现的变化，马所拉学者（公元 7–10 世纪）加上符号，记录了当时的读法。</div>
+</section>
+
+<div class="ex">
+<h3><span class="lab">例子</span>用七步快翻 <span class="he">וַיֹּאמֶר</span></h3>
+<div class="scroll"><table class="walk">
+<thead><tr><th>步骤</th><th>找到什么</th><th>快翻</th></tr></thead><tbody>
+<tr><td>1 连接词</td><td><span class="he">וַ</span>，构成叙述式</td><td>和</td></tr>
+<tr><td>2 人称</td><td>第三人称、单数、阳性</td><td>他</td></tr>
+<tr><td>3 否定副词</td><td>没有</td><td>—</td></tr>
+<tr><td>4 时态</td><td>未完成式（和 <span class="he">וַ</span> 组成叙述式，讲过去发生的事）</td><td>—</td></tr>
+<tr><td>5 词干</td><td>Qal（主动），没有快翻用字</td><td>—</td></tr>
+<tr><td>6 简义</td><td>字根 <span class="he">אמר</span>：说</td><td>说</td></tr>
+<tr><td>7 人称词尾</td><td>第三人称阳性单数由前缀 <span class="he">י</span> 表示，没有另加词尾</td><td>—</td></tr>
+</tbody></table></div>
+<p class="result">快翻：和 他 说　→　直译：他就说</p>
+</div>
+
+<section>
+<h2>五、分词</h2>
+<div class="panel">
+<p>分词是动词的一种，表示<b>持续不断的动作或状态</b>，类似英文的 being 和现在分词 doing。</p>
+<p>学分词要注意五点：</p>
+<ol>
+<li>主动分词和被动分词</li>
+<li>单数、复数</li>
+<li>阴性、阳性</li>
+<li>属于哪个词干</li>
+<li>分词可以当动词、形容词或名词用</li>
+</ol>
+</div>
+<div class="panel">
+<h3>分词的快翻公式</h3>
+<p>把分词带的信息一个一个翻出来，按固定顺序排好：</p>
+<div class="formula">
+<div><b>众</b><span>复数</span></div>
+<div><b>被</b><span>被动</span></div>
+<div><b>大大</b><span>加强词干</span></div>
+<div><b>做</b><span>简义</span></div>
+<div><b>＋ 的／者</b><span>看用法</span></div>
+</div>
+<div class="scroll"><table>
+<thead><tr><th>分词当作</th><th>结尾</th><th>快翻</th></tr></thead><tbody>
+<tr><td>动词</td><td>（不加）</td><td>众被大大做</td></tr>
+<tr><td>形容词</td><td>加“的”</td><td>众被大大做<span class="kw">的</span></td></tr>
+<tr><td>名词</td><td>加“者”</td><td>众被大大做<span class="kw">者</span></td></tr>
+</tbody></table></div>
+<p class="muted">这个例子是一个复数、被动、加强词干（Pu'al）的分词。单数就不写“众”，主动就不写“被”，Qal 就不写“大大”。</p>
+</div>
+</section>
+
+<div class="ex">
+<h3><span class="lab">例子</span>士师记 14:14　参孙的谜语</h3>
+<div class="big">מֵהָאֹכֵל יָצָא מַאֲכָל וּמֵעַז יָצָא מָתוֹק</div>
+<div class="scroll"><table>
+<thead><tr><th>原文</th><th>分析</th><th>快翻（可选译法）</th></tr></thead><tbody>
+<tr><td><span class="he">מֵהָאֹכֵל</span></td><td>介系词 <span class="he">מִן</span>（从）＋定冠词 <span class="he">הַ</span>＋Qal 主动分词，单阳；在这里当名词“吃者”</td><td>从那吃者／从正在吃／从吃的他</td></tr>
+<tr><td><span class="he">יָצָא</span></td><td>Qal 完成式，3 单阳；简义：出去、出来</td><td>他已经出来</td></tr>
+<tr><td><span class="he">מַאֲכָל</span></td><td>名词</td><td>食物</td></tr>
+<tr><td><span class="he">וּמֵעַז</span></td><td>连接词 <span class="he">ו</span>＋介系词 <span class="he">מִן</span>＋形容词，阳单；在这里当名词“强者”</td><td>和从强者</td></tr>
+<tr><td><span class="he">יָצָא</span></td><td>同上</td><td>他已经出来</td></tr>
+<tr><td><span class="he">מָתוֹק</span></td><td>形容词，阳单；在这里当名词“甜的东西”</td><td>甜的／甜物／甜者</td></tr>
+</tbody></table></div>
+<ul>
+<li><span class="he">מֵהָאֹכֵל</span> 是分词当名词用，所以按公式加“者”，译“吃者”；有定冠词，再加“那”。</li>
+<li>原文 <span class="he">מֵהָאֹכֵל</span> 里有定冠词 <span class="he">הָ</span>，但 App 的分析只写“介系词 <span class="he">מִן</span>＋动词”，<b>漏掉了定冠词</b>。要根据句子结构和上下文自己判断。</li>
+<li>形容词也能当名词用，例如 <span class="he">עַז</span>“强的”→“强者”，<span class="he">מָתוֹק</span>“甜的”→“甜物”。</li>
+</ul>
+<p class="result">快翻：从那吃者 他已经出来 食物，和从强者 他已经出来 甜物</p>
+<p class="muted">和合本：吃的从吃者出来；甜的从强者出来。</p>
+</div>
+
+<section>
+<h2>六、快翻常犯的七个错误</h2>
+<div class="panel scroll"><table>
+<thead><tr><th>#</th><th>错误</th><th>表现</th></tr></thead><tbody>
+<tr><th>1</th><td><b>急着转换</b></td><td>急于变成通顺的中文，结果语序和逻辑都乱了。</td></tr>
+<tr><th>2</th><td><b>忽略细节</b></td><td>漏掉人称、时态等信息。</td></tr>
+<tr><th>3</th><td><b>套用译本</b></td><td>直接照搬现成译本的译法。</td></tr>
+<tr><th>4</th><td><b>主观臆断</b></td><td>按自己的理解去翻，而不是按原文。</td></tr>
+<tr><th>5</th><td><b>合并翻译</b></td><td>把几个词随意合在一起翻，破坏了原文结构。</td></tr>
+<tr><th>6</th><td><b>过度解读</b></td><td>加进原文里没有的意思。</td></tr>
+<tr><th>7</th><td><b>不做记录</b></td><td>不记笔记，同一个问题反复问。</td></tr>
+</tbody></table></div>
+<div class="tip">总原则：一个字对一个字，照原文直接翻，不加自己的意思。</div>
+</section>
+
+<section>
+<h2>七、怎样尽快上手快翻</h2>
+<div class="panel"><ol>
+<li>积累常用词汇，熟悉语法规律。</li>
+<li>学过的内容及时消化，按时完成作业。</li>
+<li>课上跟着老师理解、多互动。边学边练，消化得最快。</li>
+</ol></div>
+</section>
+</div>
